@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabus | Lovepreet Singh</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      
+      background: #161b22;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #00bfff;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #00bfff;
+    }
+
+    .syllabus-page {
+      text-align: center;
+      margin-top: 20px;
+      padding: 60px 20px;
+    }
+
+    .syllabus-page h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .syllabus-page p {
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .subject-card {
+      background: #161b22;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: left;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #e6edf3;
+      border: 1px solid transparent;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-5px);
+      border-color: #00bfff;
+      box-shadow: 0 0 15px rgba(0,191,255,0.2);
+    }
+
+    .subject-card.inactive {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      color: #777;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Lovepreet<span>Singh</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="syllabus.html" class="active">Syllabus</a>
+    </nav>
+  </header>
+
+  <section class="syllabus-page">
+    <h1>📚 Course Syllabus</h1>
+    <p>Select a subject to view its syllabus:</p>
+
+    <div class="subject-grid">
+      <a href="chemistry.html" class="subject-card">
+        <h2>Engineering Chemistry</h2>
+        <p>Water treatment, polymers, electrochemistry, nanomaterials & more.</p>
+      </a>
+
+      <a href="maths.html" class="subject-card">
+        <h2>Mathematics-I</h2>
+        <p>Matrices, differential & integral calculus, vector calculus.</p>
+      </a>
+      <a href="foip.html" class="subject-card">
+  <h2>Fundamentals of IT & Programming using Python</h2>
+  <p>Introduction to computers, Python syntax, functions, and file handling.</p>
+</a>
+
+
+     
+      <a href="beee.html" class="subject-card">
+        <h2>Basic Electrical & Electronics Engineering (BEEE)</h2>
+        <p>Electric circuits, transformers, motors, semiconductors, and protection systems.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lovepreet Singh | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
